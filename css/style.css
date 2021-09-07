@@ -19,10 +19,17 @@ a:hover{
 }
 
 p, li{
-  font-size:16px;  
+  font-size:16px;
+  line-height: 150%;
 }
+
 article{
     margin-top:60px;
+}
+
+p{
+    width:80%;
+    margin:20px auto;
 }
 
 /* || Sitewide */
@@ -44,7 +51,7 @@ nav{
 
 nav ul{
     list-style-type: none;
-    margin:20px auto;   
+    margin:20px auto;
     width:100%;
 }
 
@@ -66,8 +73,10 @@ main{
     text-align:center;
 }
 
-footer{  
+footer{
     grid-area:footer;
+    color:pink;
+    text-align:center;
 }
 
 #up{
@@ -133,6 +142,52 @@ footer{
 .album img{
     width:100%;
 }
+#contact{
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:auto;
+}
+#contact section{
+    width:100%;
+}
+
+form{
+    margin:20px auto;
+
+}
+
+input, textarea{
+    margin:10px auto;
+    padding:10px;
+    background-color:rgb(228, 228, 228);
+    border-radius:5px;
+}
+input{
+    width:70%;
+    margin-bottom:30px;
+}
+
+input[type="submit"]{
+    background-color:rgb(255, 139, 203);
+    font-size:18px;
+    width:100px;
+    transition:transform 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover{
+    transform:scale(1.1);
+}
+
+input[type="submit"]:active{
+    background-color:rgb(253, 81, 176);
+}
+
+label{
+    font-size:18px;
+    padding:20px;
+}
+
 
 @media (min-width:768px){
     #portfolio{
@@ -147,7 +202,7 @@ footer{
     .album{
         padding:30px;
     }
-    
+
     .album img{
         width:100%
     }
@@ -158,7 +213,7 @@ footer{
     #title{
         font-size:45px;
     }
-}   
+}
 @media (min-width:992px){
     #main{
         height:1020px;
@@ -178,11 +233,11 @@ footer{
     #portfolio{
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
     .album{
         padding:30px;
     }
-    
+
     .album img{
        transition:transform 0.2s ease-in-out;
     }
@@ -200,7 +255,7 @@ footer{
     }
 
     h2{
-        font-size:36px;
+        font-size:34px;
     }
 
     #diskografi{
@@ -221,5 +276,9 @@ footer{
     }
     #upsymbol{
         font-size:60px
+    }
+    #contact{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
     }
 }
