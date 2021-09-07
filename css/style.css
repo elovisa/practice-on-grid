@@ -60,7 +60,7 @@ nav li{
 }
 
 nav a{
-    padding:5px 10px;
+    padding:5px 8px;
 }
 
 header{
@@ -172,16 +172,9 @@ input[type="submit"]{
     background-color:rgb(255, 139, 203);
     font-size:18px;
     width:100px;
-    transition:transform 0.2s ease-in-out;
 }
 
-input[type="submit"]:hover{
-    transform:scale(1.1);
-}
 
-input[type="submit"]:active{
-    background-color:rgb(253, 81, 176);
-}
 
 label{
     font-size:18px;
@@ -272,14 +265,28 @@ label{
         width:800px;
         margin:50px auto;
     }
+
     #up{
         right:60px;
     }
+
     #upsymbol{
         font-size:60px
     }
+
     #contact{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
+    }
+
+    input[type="submit"]{
+        transition:transform 0.2s ease-in-out;
+    }
+    input[type="submit"]:hover{
+        transform:scale(1.1);
+    }
+    
+    input[type="submit"]:active{
+        background-color:rgb(253, 81, 176);
     }
 }
