@@ -210,8 +210,14 @@ label{
     nav a{
         padding:10px 20px;
     }
+
     #title{
         font-size:45px;
+    }
+
+    #diskografi{
+        width:600px;
+        margin:0 auto;
     }
 }
 @media (min-width:992px){
@@ -256,11 +262,6 @@ label{
 
     h2{
         font-size:34px;
-    }
-
-    #diskografi{
-        width:600px;
-        margin:0 auto;
     }
 
     nav a{
