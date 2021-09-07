@@ -24,6 +24,10 @@ p, li{
 article{
     margin-top:60px;
 }
+p{
+    width:80%;
+    margin:20px auto;
+}
 
 /* || Sitewide */
 #main{
@@ -132,6 +136,46 @@ footer{
 
 .album img{
     width:100%;
+}
+#contact{
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:auto;
+}
+#contact section{
+    width:100%;
+}
+
+form{
+    margin:20px auto;
+    
+}
+input, textarea{
+    margin:10px auto;
+    padding:10px;
+    background-color:rgb(228, 228, 228);
+    border-radius:5px;
+}
+input{
+    width:70%;
+}
+input[type="submit"]{
+    background-color:rgb(255, 139, 203);
+    font-size:18px;
+    width:100px;
+    transition:transform 0.2s ease-in-out;
+}
+input[type="submit"]:hover{
+    transform:scale(1.1);
+}
+input[type="submit"]:active{
+    background-color:rgb(253, 81, 176);
+}
+
+label{
+    font-size:18px;
+    padding:20px;
 }
 
 @media (min-width:768px){
