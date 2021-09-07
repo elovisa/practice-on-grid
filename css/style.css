@@ -1,5 +1,7 @@
 /* || General styles*/
-
+html{
+    width:100%;
+}
 body{
     background-color: black;
     font-family:"helvetica neue", sans-serif;
@@ -18,6 +20,9 @@ a:hover{
 
 p, li{
   font-size:16px;  
+}
+article{
+    margin-top:60px;
 }
 
 /* || Sitewide */
@@ -61,7 +66,6 @@ main{
     text-align:center;
 }
 
-
 footer{  
     grid-area:footer;
 }
@@ -100,12 +104,12 @@ footer{
 
 #diskografi section{
     width:100%;
-    margin:100px auto;
+    margin:10px auto;
 }
 
 #diskografi ul{
     text-align:left;
-    margin-left:120px;
+    margin:0 auto;
 }
 
 #diskografi li{
@@ -132,11 +136,14 @@ footer{
 
 @media (min-width:768px){
     #portfolio{
-        display:grid;
-        width:100%;
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
+    #tribute-info{
+        width:80%;
+        margin:40px auto;
+    }
+
     .album{
         padding:30px;
     }
@@ -147,6 +154,9 @@ footer{
 
     nav a{
         padding:10px 20px;
+    }
+    #title{
+        font-size:45px;
     }
 }   
 @media (min-width:992px){
@@ -166,8 +176,6 @@ footer{
     }
 
     #portfolio{
-        display:grid;
-        width:100%;
         grid-template-columns: repeat(3, 1fr);
     }
     
@@ -201,11 +209,17 @@ footer{
     }
 
     nav a{
-        padding:10px 20px;
+        padding:10px 25px 0 25px;
     }
 
     #tribute-info{
         width:800px;
         margin:50px auto;
+    }
+    #up{
+        right:60px;
+    }
+    #upsymbol{
+        font-size:60px
     }
 }
