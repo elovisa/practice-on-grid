@@ -19,12 +19,14 @@ a:hover{
 }
 
 p, li{
-  font-size:16px;  
+  font-size:16px;
   line-height: 150%;
 }
+
 article{
     margin-top:60px;
 }
+
 p{
     width:80%;
     margin:20px auto;
@@ -49,7 +51,7 @@ nav{
 
 nav ul{
     list-style-type: none;
-    margin:20px auto;   
+    margin:20px auto;
     width:100%;
 }
 
@@ -71,8 +73,10 @@ main{
     text-align:center;
 }
 
-footer{  
+footer{
     grid-area:footer;
+    color:pink;
+    text-align:center;
 }
 
 #up{
@@ -150,7 +154,7 @@ footer{
 
 form{
     margin:20px auto;
-    
+
 }
 
 input, textarea{
@@ -184,6 +188,7 @@ label{
     padding:20px;
 }
 
+
 @media (min-width:768px){
     #portfolio{
         grid-template-columns: repeat(3, 1fr);
@@ -197,7 +202,7 @@ label{
     .album{
         padding:30px;
     }
-    
+
     .album img{
         width:100%
     }
@@ -208,7 +213,7 @@ label{
     #title{
         font-size:45px;
     }
-}   
+}
 @media (min-width:992px){
     #main{
         height:1020px;
@@ -228,11 +233,11 @@ label{
     #portfolio{
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
     .album{
         padding:30px;
     }
-    
+
     .album img{
        transition:transform 0.2s ease-in-out;
     }
@@ -250,7 +255,7 @@ label{
     }
 
     h2{
-        font-size:36px;
+        font-size:34px;
     }
 
     #diskografi{
@@ -271,5 +276,9 @@ label{
     }
     #upsymbol{
         font-size:60px
+    }
+    #contact{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
     }
 }
